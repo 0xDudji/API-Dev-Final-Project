@@ -16,14 +16,23 @@ Dit project is gericht op het aanmaken van gebruikers, inloggen met OAuth2, en h
 
 
 **Okteto**
-https://useritem-api-service-skemil.cloud.okteto.net/
+https://useritem-api-service-eindopdracht-skemil.cloud.okteto.net/
 
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/32f8e9f2-84b8-40e9-ab57-328e6aa4ac0c)
 
 **Front-End**
 
-https://skemil.github.io/Project-API-Development/front-end/
+https://endearing-sfogliatella-c29661.netlify.app/
 
+
+**Security**
+
+User moet ingelogt zijn voor hij alle users kan weergeven (Users kunnen wel nog bekeken worden met hun user ID voor demo purposed)
+
+Gebruikers:
+
+Username: demo@hotmail.com
+Pass: demo
 
 **REST API**
 Endpoints
