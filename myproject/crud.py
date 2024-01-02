@@ -42,12 +42,12 @@ def delete_review(db: Session, review_id: int):
         return True
     return False
 
-def update_user(db: Session, user_id: int, user: schemas.UserUpdate):
-    db_user = db.query(models.User).filter(models.User.id == user_id).first()
-    if db_user:
-        # Update model class instance with new data
-        for var, value in vars(user).items():
-            setattr(db_user, var, value) if value else None
-        db.commit()
-        db.refresh(db_user)
-    return db_user
+# def update_user(db: Session, user_id: int, user: schemas.UserUpdate):
+#     db_user = db.query(models.User).filter(models.User.id == user_id).first()
+#     if db_user:
+#         # Update model class instance with new data
+#         for var, value in vars(user).items():
+#             setattr(db_user, var, value) if value else None
+#         db.commit()
+#         db.refresh(db_user)
+#     return db_user
