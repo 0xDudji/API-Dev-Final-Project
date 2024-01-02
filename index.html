@@ -111,7 +111,7 @@ function getReviews() {
     request.open('GET', url, true)
     // When the 'request' or API request loads, do the following...
     request.onload = function() {
-        // Store what we get back from the Xano API as a variable called 'data' and converts it to a javascript object
+        // Store what we get back from the Xano dAPI as a variable called 'data' and converts it to a javascript object
         let data = JSON.parse(this.response)
         // Status 200 = Success. Status 400 = Problem.  This says if it's successful and no problems, then execute 
         if (request.status >= 200 && request.status < 400) {

@@ -1,4 +1,4 @@
-**Project API Development | Emin Dudayev - README**
+**Project API Development Eind Opdracht | Emin Dudayev - README**
 
 Algemene Informatie
 Dit project bevat een API die reviews behandelt voor de nieuwe iPhone 15.
