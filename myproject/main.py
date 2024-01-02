@@ -94,11 +94,11 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
     #Return the JWT as a bearer token to be placed in the headers
     return {"access_token": access_token, "token_type": "bearer"}
 
-# @app.put("/users/{user_id}", response_model=schemas.User)
-# def update_user(user_id: int, user: schemas.UserUpdate, db: Session = Depends(get_db)):
-#     db_user = crud.get_user(db, user_id=user_id)
-#     if db_user is None:
-#         raise HTTPException(status_code=404, detail="User not found")
+@app.put("/users/{user_id}", response_model=schemas.User)
+def update_user(user_id: int, user: schemas.UserUpdate, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail="User not found")
     
-#     updated_user = crud.update_user(db=db, user_id=user_id, user=user)
-#     return updated_user
+    updated_user = crud.update_user(db=db, user_id=user_id, user=user)
+    return updated_user
