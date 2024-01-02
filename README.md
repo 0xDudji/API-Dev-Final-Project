@@ -29,10 +29,17 @@ https://endearing-sfogliatella-c29661.netlify.app/
 
 User moet ingelogt zijn voor hij alle users kan weergeven (Users kunnen wel nog bekeken worden met hun user ID voor demo purposed)
 
+![image](https://github.com/skemil/API-Dev-Eindopdracht/assets/71653103/676c441e-d525-4d11-bc00-c76a2c77884b)
+
+
 Gebruikers:
 
 Username: demo@hotmail.com
 Pass: demo
+
+**Testing**
+
+Alle Get Endpoints hebben een test (myproject/test.py).
 
 **REST API**
 Endpoints
